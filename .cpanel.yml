@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home3/sgm/kelseyraph.sgm.ng/
+    # - /bin/rm -Rf $DEPLOYPATH
+    # - /bin/mkdir $DEPLOYPATH
+    - /bin/cp -a * $DEPLOYPATH
