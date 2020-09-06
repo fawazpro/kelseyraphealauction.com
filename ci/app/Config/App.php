@@ -21,7 +21,8 @@ class App extends BaseConfig
 	| environments.
 	|
 	*/
-	public $baseURL = 'http://localhost/tope.auction/';
+	
+	public $baseURL = '';
 
 	/*
 	|--------------------------------------------------------------------------
@@ -265,4 +266,16 @@ class App extends BaseConfig
 	|   - http://www.w3.org/TR/CSP/
 	*/
 	public $CSPEnabled = false;
+
+	
+	public function __construct()
+	{
+		parent::__construct();
+		if (getEnv('ENVIRONMENT') == 'production') {
+			$this->baseURL = 'http://kelseyraph.sgm.ng/';
+		}else if(getEnv('ENVIRONMENT') == 'development'){
+			$this->baseURL = 'http://localhost/tope.auction/';
+		}
+	}
+	
 }
