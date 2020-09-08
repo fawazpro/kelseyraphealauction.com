@@ -54,154 +54,30 @@
 <section class="pt-0 section-b-space ratio_asos">
     <div class="container">
         <div class="row game-product grid-products">
-            <div class="product-box col-xl-2 col-lg-3 col-sm-4 col-6">
-                <div class="img-wrapper">
-                    <div class="front">
-                        <a href="#!"><img src="<?= base_url('assets/images/marketplace/1.jpg') ?>" class="img-fluid blur-up lazyload bg-img" alt=""></a>
+            <?php foreach ($prods as $key => $prod) : ?>
+                <div class="product-box col-xl-2 col-lg-3 col-sm-4 col-6">
+                    <div class="img-wrapper">
+                        <div class="front">
+                            <a href="#!"><img src="<?= base_url($prod['image']) ?>" class="img-fluid blur-up lazyload bg-img" alt=""></a>
+                        </div>
+                        <div class="cart-info cart-wrap">
+                            <a href="#" data-toggle="modal" data-target="#quick-view" title="Place Bid" tabindex="0"><i class="fa fa-gavel" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="add-button" data-toggle="modal" data-target="#quick-view">Bid</div>
                     </div>
-                    <div class="cart-info cart-wrap">
-                        <a href="#" data-toggle="modal" data-target="#quick-view" title="Place Bid" tabindex="0"><i class="fa fa-gavel" aria-hidden="true"></i></a>
+                    <div class="product-detail">
+                        <a href="#!">
+                            <h6><?=$prod['prod_name'] ?></h6>
+                        </a>
+                        <h4 class="float-left">$<?=$prod['price'] ?></h4>
+                        <h6 class="float-right"><?=$prod['bid']?> bids</h6>
+                        <br>
+                        <h5 class="float-left"><?=$prod['date']?></h5>
                     </div>
-                    <div class="add-button" data-toggle="modal" data-target="#quick-view">Bid</div>
                 </div>
-                <div class="product-detail">
-                    <a href="#!">
-                        <h6>Slim Fit Cotton Shirt he is a boy YEs Boy!</h6>
-                    </a>
-                    <h4 class="float-left">$500.00</h4>
-                    <h6 class="float-right">20 bids</h6>
-                    <br>
-                    <h5 class="float-left">3D 12H 3M 20S</h5>
-                </div>
-            </div>
-            <div class="product-box col-xl-2 col-lg-3 col-sm-4 col-6">
-                <div class="img-wrapper">
-                    <div class="front">
-                        <a href="#!"><img src="<?= base_url('assets/images/marketplace/1.jpg') ?>" class="img-fluid blur-up lazyload bg-img" alt=""></a>
-                    </div>
-                    <div class="cart-info cart-wrap">
-                        <a href="#" data-toggle="modal" data-target="#quick-view" title="Place Bid" tabindex="0"><i class="fa fa-gavel" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="add-button" data-toggle="modal" data-target="#quick-view">Bid</div>
-                </div>
-                <div class="product-detail">
-                    <a href="#!">
-                        <h6>Slim Fit Cotton Shirt he is a boy YEs Boy!</h6>
-                    </a>
-                    <h4 class="float-left">$500.00</h4>
-                    <h6 class="float-right">20 bids</h6>
-                </div>
-            </div>
-            <div class="product-box col-xl-2 col-lg-3 col-sm-4 col-6">
-                <div class="img-wrapper">
-                    <div class="front">
-                        <a href="#!"><img src="<?= base_url('assets/images/marketplace/1.jpg') ?>" class="img-fluid blur-up lazyload bg-img" alt=""></a>
-                    </div>
-                    <div class="cart-info cart-wrap">
-                        <a href="#" data-toggle="modal" data-target="#quick-view" title="Place Bid" tabindex="0"><i class="fa fa-gavel" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="add-button" data-toggle="modal" data-target="#quick-view">Bid</div>
-                </div>
-                <div class="product-detail">
-                    <a href="#!">
-                        <h6>Slim Fit Cotton Shirt he is a boy YEs Boy!</h6>
-                    </a>
-                    <h4 class="float-left">$500.00</h4>
-                    <h6 class="float-right">20 bids</h6>
-                </div>
-            </div>
-            <div class="product-box col-xl-2 col-lg-3 col-sm-4 col-6">
-                <div class="img-wrapper">
-                    <div class="front">
-                        <a href="#!"><img src="<?= base_url('assets/images/marketplace/2.jpg') ?>" class="img-fluid blur-up lazyload bg-img" alt=""></a>
-                    </div>
-                    <div class="cart-info cart-wrap">
-                        <a href="#" data-toggle="modal" data-target="#quick-view" title="Place Bid" tabindex="0"><i class="fa fa-gavel" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="add-button" data-toggle="modal" data-target="#quick-view">Bid</div>
-                </div>
-                <div class="product-detail">
-                    <a href="#!">
-                        <h6>Slim Fit Cotton Shirt he is a boy YEs Boy!</h6>
-                    </a>
-                    <h4 class="float-left">$500.00</h4>
-                    <h6 class="float-right">20 bids</h6>
-                </div>
-            </div>
-            <div class="product-box col-xl-2 col-lg-3 col-sm-4 col-6">
-                <div class="img-wrapper">
-                    <div class="front">
-                        <a href="#!"><img src="<?= base_url('assets/images/marketplace/3.jpg') ?>" class="img-fluid blur-up lazyload bg-img" alt=""></a>
-                    </div>
-                    <div class="cart-info cart-wrap">
-                        <a href="#" data-toggle="modal" data-target="#quick-view" title="Place Bid" tabindex="0"><i class="fa fa-gavel" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="add-button" data-toggle="modal" data-target="#quick-view">Bid</div>
-                </div>
-                <div class="product-detail">
-                    <a href="#!">
-                        <h6>Slim Fit Cotton Shirt he is a boy YEs Boy!</h6>
-                    </a>
-                    <h4 class="float-left">$500.00</h4>
-                    <h6 class="float-right">20 bids</h6>
-                </div>
-            </div>
-            <div class="product-box col-xl-2 col-lg-3 col-sm-4 col-6">
-                <div class="img-wrapper">
-                    <div class="front">
-                        <a href="#!"><img src="<?= base_url('assets/images/marketplace/4.jpg') ?>" class="img-fluid blur-up lazyload bg-img" alt=""></a>
-                    </div>
-                    <div class="cart-info cart-wrap">
-                        <a href="#" data-toggle="modal" data-target="#quick-view" title="Place Bid" tabindex="0"><i class="fa fa-gavel" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="add-button" data-toggle="modal" data-target="#quick-view">Bid</div>
-                </div>
-                <div class="product-detail">
-                    <a href="#!">
-                        <h6>Slim Fit Cotton Shirt he is a boy YEs Boy!</h6>
-                    </a>
-                    <h4 class="float-left">$500.00</h4>
-                    <h6 class="float-right">20 bids</h6>
-                </div>
-            </div>
-            <div class="product-box col-xl-2 col-lg-3 col-sm-4 col-6">
-                <div class="img-wrapper">
-                    <div class="front">
-                        <a href="#!"><img src="<?= base_url('assets/images/marketplace/2.jpg') ?>" class="img-fluid blur-up lazyload bg-img" alt=""></a>
-                    </div>
-                    <div class="cart-info cart-wrap">
-                        <a href="#" data-toggle="modal" data-target="#quick-view" title="Place Bid" tabindex="0"><i class="fa fa-gavel" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="add-button" data-toggle="modal" data-target="#quick-view">Bid</div>
-                </div>
-                <div class="product-detail">
-                    <a href="#!">
-                        <h6>Slim Fit Cotton Shirt he is a boy YEs Boy!</h6>
-                    </a>
-                    <h4 class="float-left">$500.00</h4>
-                    <h6 class="float-right">20 bids</h6>
-                </div>
-            </div>
-            <div class="product-box col-xl-2 col-lg-3 col-sm-4 col-6">
-                <div class="img-wrapper">
-                    <div class="front">
-                        <a href="#!"><img src="<?= base_url('assets/images/marketplace/1.jpg') ?>" class="img-fluid blur-up lazyload bg-img" alt=""></a>
-                    </div>
-                    <div class="cart-info cart-wrap">
-                        <a href="#" data-toggle="modal" data-target="#quick-view" title="Place Bid" tabindex="0"><i class="fa fa-gavel" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="add-button" data-toggle="modal" data-target="#quick-view">Bid</div>
-                </div>
-                <div class="product-detail">
-                    <a href="#!">
-                        <h6>Slim Fit Cotton Shirt he is a boy YEs Boy!</h6>
-                    </a>
-                    <h4 class="float-left">$500.00</h4>
-                    <h6 class="float-right">20 bids</h6>
-                </div>
-            </div>
-            
+
         </div>
+    <?php endforeach; ?>
     </div>
 </section>
 <!-- Product section end -->
